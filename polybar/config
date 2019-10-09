@@ -60,7 +60,7 @@ font-2 = "xos4 Terminus:size=12;2"
 
 modules-left = i3
 modules-center = title
-modules-right = xbacklight pulseaudio xkeyboard memory cpu wlan eth battery temperature date powermenu nm-applet
+modules-right = xbacklight pulseaudio xkeyboard cpu memory wlan eth battery temperature date powermenu nm-applet
 
 tray-position = right
 tray-padding = 2
@@ -101,7 +101,7 @@ label-layout-underline = ${xrdb:foreground}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
-label-indicator-background = ${xrdb:foreground}
+label-indicator-background = ${xrdb:color8}
 label-indicator-underline = ${xrdb:foreground}
 
 [module/filesystem]
@@ -242,7 +242,7 @@ card = intel_backlight
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-prefix-foreground = ${color.icons}
+format-prefix-foreground = ${xrdb:foreground}
 format-underline = ${xrdb:foreground}
 label = %percentage:2%%
 

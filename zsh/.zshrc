@@ -128,16 +128,13 @@ SPACESHIP_HOST_SHOW=always
 SPACESHIP_HOST_PREFIX="@"
 
 # Dir config
-SPACESHIP_DIR_PREFIX= 
+SPACESHIP_DIR_PREFIX=
 
 
 # Android SDK
 export ANDROID_HOME=~/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# FZF
-export FZF_DEFAULT_COMMAND='ag -g ""' 
 
 # Golang
 export PATH=$PATH:/usr/local/go/bin
@@ -153,3 +150,8 @@ cat ~/.cache/wal/sequences
 
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh
+
+# FZF
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

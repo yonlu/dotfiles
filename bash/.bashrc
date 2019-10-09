@@ -24,11 +24,6 @@ PS1='[\u@\h \W]\$ '
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-# Start tmux on terminal launch
-#if ! [[ "$TERM" =~ "screen" || "$tmux_lock" = "true" ]]; then
-#	tmux -u
-#fi
-
 # Android SDK
 export ANDROID_HOME=~/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -38,3 +33,5 @@ export PATH="$PATH:$(yarn global bin)"
 
 # Open tmux with unicode support
 alias tmux='tmux -u'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
