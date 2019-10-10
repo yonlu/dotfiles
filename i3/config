@@ -3,6 +3,12 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 #
 
+# Defines a variable by querying for the "colorX" resource,
+set_from_resource $primary color14 #000000
+
+# Window border color
+client.focused          #d9d9d9 #c4c4c4 #000000 #i8i8i8 $primary
+
 set $mod Mod4
 set $term --no-startup-id alacritty
 #set $term --no-startup-id urxvt
