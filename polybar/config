@@ -30,7 +30,7 @@ secondary = #e60053
 alert = #bd2c40
 icons = #eee
 
-[bar/example]
+[bar/primary]
 monitor = ${env:MONITOR:}
 width = 100%
 height = 30
